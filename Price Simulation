@@ -1,0 +1,9 @@
+// Trigger: After the user completes the price simulation and sees the estimated value of their car.
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  event: "custom_price_simulation", // Custom event for tracking the price simulation
+  value: 25000, // Standard parameter: the estimated value of the car
+  currency: "EUR", // Standard parameter: currency of the value
+  item_name: "Toyota Corolla", // Standard parameter: car model
+  transaction_id: "TX12345" // Standard parameter: unique session or transaction ID
+});
